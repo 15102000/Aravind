@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <script src="form.js"></script>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+        <h1>PROFILE</h1>
+        <form action="redirect.php" method="POST" ="">
+            <div id="name-group" class="form-group">
+                <label for="name">NAME</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                 />
+              </div>
+              <div id="gender-group" class="form-group">
+                <label for="gender">GENDER</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="gender"
+                  name="gender"
+                 />
+                </div>
+                 <div id="D O B-group" class="form-group">
+                    <label for="D O B">D O B</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="D O B"
+                      name="D O B"
+                     />
+                  </div>
+                  <div id="email-group" class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      />
+                    </div>
+                    <div id="contact-group" class="form-group">
+                        <label for="contact">CONTACT</label>
+                        <input
+                          type="contact"
+                          class="form-control"
+                          id="contact"
+                          name="contact"
+                          />
+                        </div>
+                        <div id="address-group" class="form-group">
+                            <label for="address">ADDRESS</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="address"
+                              name="address"
+                              />
+                            </div>
+                            <div id="qualification-group" class="form-group">
+                                <label for="qualification">QUALIFICATION</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="qualification"
+                                  name="qualification"
+                                  />
+                                </div>
+                                <button type="submit" class="btn btn-success">
+                                    Submit
+                                  </button>
+                                  <?php
+                                  include "include/redirect.php";
+                                  ?>
+
+              
+        </form>
+        </div>
+    </body>
+    </html>
